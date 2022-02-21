@@ -4,8 +4,8 @@ import DetallesCarro from "./DetallesCarro";
 
 const styles={
     carro: {
-        backgroundColor: "#359A2C",
-        color: "#fff",
+        backgroundColor: "#f7d3c3",
+        color: "black",
         border: "none",
         padding: "15px",
         borderRadius: "15px",

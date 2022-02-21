@@ -7,9 +7,9 @@ import NavBar from './components/NavBar';
 class App extends Component{
   state = {
     productos: [
-      { name: 'Tomate', price: 1500, img: '/assets/tomate.jpg'},
-      { name: 'Arbejas', price: 2500, img: '/assets/arbejas.jpg'},
-      { name: 'Lechuga', price: 500, img: '/assets/lechuga.jpg'}
+      { name: 'Cactus', price: 50, img: 'https://raw.githubusercontent.com/paocheez/ImageSourcePijamars/master/assets/cactus.jpg'},
+      { name: 'Graptopetalum', price: 70, img: 'https://raw.githubusercontent.com/paocheez/ImageSourcePijamars/master/assets/rosa.jpg'},
+      { name: 'Superboom', price: 75, img: 'https://raw.githubusercontent.com/paocheez/ImageSourcePijamars/master/assets/superbum.jpg'}
     ],
     carro: [],
     esCarroVisible: false

@@ -22,23 +22,39 @@ const styles ={
         alignItems: "center",
         padding: "25px 20px",
         borderBottom: "solid 1px #aaa"
+    },
+    total:{
+        display: "flex",
+        justifyContent: "flex-end",
+        padding: "10px 20px",
+        backgroundColor: "#f7d3c3",
+        fontWeight: "bold"
+
+    },
+    amount:{
+        paddingRight: "10px"
     }
 }
 
 class DetallesCarro extends Component{
     render(){
         const { carro } = this.props
+        const totalPrice = carro.reduce((acc, curr) => acc + curr.price * curr.cantidad , 0);
         console.log(carro)
         return(
             <div style={styles.detallesCarro}>
                 <ul style={styles.ul}>
                     {carro.map(x => 
                         <li style={styles.producto} key={x.name}>
-                            <img alt={x.name} src={x.img} width="50" height="32" /> {x.name}
+                            <img alt={x.name} src={x.img} width="40" height="32" /> {x.name}
                             <span>{x.cantidad}</span>
                         </li>
                     )}
                 </ul>
+                <div style={styles.total}>
+                    <span style={styles.amount}>Total: </span>             
+                    ${totalPrice}.00 
+                </div>
             </div>
         )
     }
