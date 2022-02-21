@@ -1,4 +1,4 @@
-#Shopping Cart
+<h1>Shopping Cart</h1>
 
 This is an example of a shopping cart, i made it using react.js.
 
